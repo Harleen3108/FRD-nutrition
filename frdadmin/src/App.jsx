@@ -13,7 +13,9 @@ import MediaGallery from './pages/MediaGallery'
 import Banners from './pages/Banners'
 import Login from './components/Login'
 import Reviews from './pages/Reviews'
+import Seo from './pages/Seo'
 import { ToastContainer } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 // Use Vite env if provided, otherwise default to localhost for local development
@@ -65,6 +67,8 @@ const App = () => {
                     <Route path='/orders' element={<Orders token={token} />} />
                     <Route path='/bookings' element={<Bookings token={token} />} />
                     <Route path='/settings' element={<AdminSettings token={token} />} />
+                    <Route path='/seo' element={<Seo token={token} />} />
+
                   </>
                 ) : userRole === 'branch' ? (
                   <>

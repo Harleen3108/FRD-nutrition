@@ -80,6 +80,19 @@ const Sidebar = ({ userRole }) => {
               <p className='hidden md:block'>Orders</p>
             </NavLink>
 
+            <NavLink
+              className={({ isActive }) =>
+                `flex items-center gap-3 px-3 py-2 rounded-l transition border-l-4 ${
+                  isActive ? 'border-[#052659] bg-[#f0f4ff] text-[#052659]' : 'border-transparent hover:bg-gray-100'
+                }`
+              }
+              to="/seo"
+            >
+              <img className='w-5 h-5' src={assets.order_icon} alt="" />
+              <p className='hidden md:block'>SEO Management</p>
+            </NavLink>
+
+
             {/* Settings link removed per request */}
 
             {/* <NavLink

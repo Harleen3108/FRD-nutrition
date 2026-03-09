@@ -38,15 +38,45 @@ router.get('/sitemap.xml', async (req, res) => {
   </url>
 
   <url>
-    <loc>${baseUrl}/best-sellers</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>${baseUrl}/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>${baseUrl}/trending-products</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>${baseUrl}/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/facilities</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/shipping-info</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/returns-refunds</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>${baseUrl}/terms-and-conditions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   ${productUrls}

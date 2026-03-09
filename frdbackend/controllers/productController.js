@@ -887,16 +887,7 @@ const singleProduct = async (req, res) => {
   }
 };
 
-export {
-  addProduct,
-  updateProduct,
-  listProducts,
-  removeProduct,
-  singleProduct,
-  addProductReview,
-  removeProductReview,
-  listAllReviews,
-};
+
 
 // Add review to a product (optional auth). Body: { productId, rating, comment, name }
 const addProductReview = async (req, res) => {
@@ -1029,4 +1020,15 @@ const listAllReviews = async (req, res) => {
     console.error('List all reviews error:', error);
     return res.status(500).json({ success: false, message: 'Failed to list reviews' });
   }
+};
+
+export {
+  addProduct,
+  updateProduct,
+  listProducts,
+  removeProduct,
+  singleProduct,
+  addProductReview,
+  removeProductReview,
+  listAllReviews,
 };

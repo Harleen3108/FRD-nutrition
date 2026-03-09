@@ -22,8 +22,10 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import ScrollToTop from './components/ScrollToTop'
+import DynamicSEO from './components/DynamicSEO'
 
 import { ToastContainer } from 'react-toastify'
+
 import 'react-toastify/dist/ReactToastify.css'
 
 import ShippingInfo from './pages/ShippingInfo'
@@ -38,9 +40,13 @@ const App = () => {
 
       {/* ✅ AUTO SCROLL TO TOP ON EVERY ROUTE CHANGE */}
       <ScrollToTop />
+      
+      {/* ✅ DYNAMIC SEO MANAGEMENT */}
+      <DynamicSEO />
 
       <Navbar />
       <SearchBar />
+
 
       <Routes>
         <Route path="/" element={<Home />} />
