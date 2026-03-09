@@ -75,12 +75,21 @@ import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
   host: "smtp.hostinger.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false, // Use STARTTLS
+  pool: true,
+  maxConnections: 3,
+  maxMessages: 100,
+  connectionTimeout: 60000, // 60s
+  greetingTimeout: 60000,
+  socketTimeout: 60000,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
+  tls: {
+    rejectUnauthorized: false // Helps with handshake issues in some cloud envs
+  }
 });
 
 export default async function sendMail(opts) {
