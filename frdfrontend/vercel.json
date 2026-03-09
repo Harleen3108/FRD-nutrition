@@ -1,16 +1,21 @@
 {
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/sitemap.xml",
       "destination": "https://frd-nutrition.onrender.com/sitemap.xml"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
     },
     {
-      "source": "/((?!api|assets|uploads).*)",
-      "destination": "https://frd-nutrition.onrender.com/$1"
+      "source": "/uploads/:path*",
+      "destination": "https://frd-nutrition.onrender.com/uploads/:path*"
+    },
+    {
+      "source": "/:path((?!api|health-check).*)",
+      "destination": "https://frd-nutrition.onrender.com/:path"
     }
   ]
 }
