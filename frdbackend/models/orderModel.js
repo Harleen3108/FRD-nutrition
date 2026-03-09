@@ -1,0 +1,25 @@
+import mongoose from 'mongoose'
+
+const orderSchema = new mongoose.Schema({
+    userId: { type: String, required: true },
+    // Per-user sequential order number (1,2,3 ... for each user)
+    // Not required for temporary/payment-pending orders; assigned only when order is finalized
+    orderNo: { type: Number },
+    items: { type: Array, required: true },
+    amount: { type: Number, required: true },
+    address: { type: Object, required: true },
+    status: { type: String, required: true, default:'Order Placed' },
+    paymentMethod: { type: String, required: true },
+    payment: { type: Boolean, required: true , default: false },
+    date: {type: Number, required:true},
+    adminNotes: { type: String, default: '' },
+    userNotes: { type: String, default: '' },
+    trackingUrl: { type: String, default: '' }
+    ,confirmationOtp: { type: String, default: null }
+    ,otpExpiry: { type: Date, default: null }
+    ,billImage: { type: String, default: '' }
+    ,billUploadedAt: { type: Date, default: null }
+})
+
+const orderModel = mongoose.models.order || mongoose.model('order',orderSchema)
+export default orderModel;

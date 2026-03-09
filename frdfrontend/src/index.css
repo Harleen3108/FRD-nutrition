@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+* {
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Light theme body */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: white; /* White background */
+  color: #1e293b; /* Default text color - dark slate */
+}
+
+/* Links */
+a {
+  color: #1e293b;
+  text-decoration: none;
+}
+
+a.active {
+  background-color: #3b82f6; /* Blue shade for active link */
+  color: white;
+}
+
+/* Scrollbar hidden */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Font classes */
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  a.active {
+    background-color: #3b82f6;
+    color: white;
+  }
+}
+
+/* Animations */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+/* Optional: force all headings and text to be dark */
+h1, h2, h3, h4, h5, h6, p, span, li {
+  color: #1e293b;
+}
