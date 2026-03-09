@@ -2,11 +2,15 @@
   "rewrites": [
     {
       "source": "/sitemap.xml",
-      "destination": "https://frdgym.onrender.com/sitemap.xml"
+      "destination": "https://frd-nutrition.onrender.com/sitemap.xml"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
+      "source": "/((?!api|assets|uploads).*)",
+      "destination": "https://frd-nutrition.onrender.com/$1"
     }
   ]
 }

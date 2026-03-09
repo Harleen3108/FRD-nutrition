@@ -52,6 +52,21 @@ const initializeApp = async () => {
 
 initializeApp();
 
+app.get('/health-check', (req, res) => {
+  res.json({
+    status: 'ok',
+    frontendPath,
+    distExists: fs.existsSync(frontendPath),
+    indexExists: fs.existsSync(path.join(frontendPath, 'index.html')),
+    assetsExists: fs.existsSync(path.join(frontendPath, 'assets')),
+    env: {
+      NODE_ENV: process.env.NODE_ENV,
+      FRONTEND_URL: process.env.FRONTEND_URL,
+      ADMIN_URL: process.env.ADMIN_URL
+    }
+  });
+});
+
 // Middlewares
 app.use(express.json());
 
