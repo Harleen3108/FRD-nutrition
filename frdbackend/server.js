@@ -82,12 +82,14 @@ const corsOptions = {
     ].filter(Boolean); // Remove null/undefined if variables aren't set
 
 
-    // Check if origin is in allowed list or is a Vercel preview URL or is a local dev origin
-    if (allowedOrigins.includes(origin) || origin.includes('vercel.app') || origin.includes('localhost') || origin.includes('127.0.0.1')) {
+    // Check if origin is in allowed list or is a platform preview URL
+    const isPlatformURL = origin.includes('vercel.app') || origin.includes('onrender.com') || origin.includes('localhost') || origin.includes('127.0.0.1');
+    
+    if (allowedOrigins.includes(origin) || isPlatformURL) {
       callback(null, true);
     } else {
-      console.log('CORS blocked origin:', origin);
-      callback(new Error('Not allowed by CORS'));
+      console.error(`[CORS] Rejected: ${origin}. Not in whitelist:`, allowedOrigins);
+      callback(null, false); // Don't throw error, just tell cors to reject
     }
   },
   credentials: true,
@@ -111,24 +113,39 @@ app.use('/api/seo', seoRouter);
 // 2. Static Assets
 app.use('/uploads', express.static('uploads'));
 
-// Serve static files from the frontend build folder
-// Use path.resolve for more robust absolute pathing across environments (Render/Local)
-const frontendPath = path.resolve(__dirname, '../frdfrontend/dist');
+// Robust path resolution for Render and Local
+const localDist = path.resolve(__dirname, '../frdfrontend/dist');
+const renderDist = path.resolve(__dirname, './dist'); // Fallback for some Render configurations
+let frontendPath = fs.existsSync(localDist) ? localDist : (fs.existsSync(renderDist) ? renderDist : localDist);
 
-// Use static first - it should handle all actual files (css, js, images)
+console.log(`[Static] Using frontend path: ${frontendPath}`);
+if (!fs.existsSync(frontendPath)) {
+    console.error(`[Static] WARNING: Frontend path does NOT exist: ${frontendPath}`);
+}
+
+// 2.1 Explicit Asset Routing (Prevents MIME errors by serving assets directly)
+app.use('/assets', express.static(path.join(frontendPath, 'assets'), {
+    immutable: true,
+    maxAge: '1y',
+    fallthrough: false // If it's in /assets but doesn't exist, 404 immediately
+}));
+
+// 2.2 General Static Files
 app.use(express.static(frontendPath));
 
 // 3. SEO HTML Injection for SPA Routes
 app.get('*', async (req, res, next) => {
-  // Enhanced Skip Logic: Never serve HTML for requests that explicitly want images, styles, or scripts
-  const hasExt = path.extname(req.path) !== '';
-  const isApi = req.path.startsWith('/api');
-  const isUpload = req.path.startsWith('/uploads');
+  // Enhanced Skip Logic
+  const ext = path.extname(req.path).toLowerCase();
+  const isAsset = req.path.startsWith('/assets/');
+  const isApi = req.path.startsWith('/api/');
+  const isUpload = req.path.startsWith('/uploads/');
   const isSitemap = req.path === '/sitemap.xml';
   const isHtmlRequest = req.headers.accept && req.headers.accept.includes('text/html');
 
-  // If it's a known non-HTML request or an API/Sitemap, skip SEO injection
-  if (isApi || isUpload || isSitemap || (hasExt && path.extname(req.path) !== '.html') || (!isHtmlRequest && hasExt)) {
+  // Skip logic: assets, images, scripts, styles should never hit this. 
+  // If they weren't found by express.static above, they should 404, not serve HTML.
+  if (isAsset || isApi || isUpload || isSitemap || (ext !== '' && ext !== '.html') || (!isHtmlRequest && ext !== '')) {
     return next();
   }
 
