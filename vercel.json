@@ -6,8 +6,8 @@
       "destination": "/assets/:path*"
     },
     {
-      "source": "/(?!assets/).*",
-      "destination": "https://frd-nutrition.onrender.com/:match*"
+      "source": "/((?!assets/).*)",
+      "destination": "https://frd-nutrition.onrender.com/$1"
     }
   ]
 }
