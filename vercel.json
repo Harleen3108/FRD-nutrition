@@ -1,0 +1,13 @@
+{
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/(?!assets/).*",
+      "destination": "https://frd-nutrition.onrender.com/:match*"
+    }
+  ]
+}
