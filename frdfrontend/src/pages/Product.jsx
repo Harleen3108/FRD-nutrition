@@ -1386,7 +1386,7 @@ const AddReviewForm = ({ reviewRating, setReviewRating, reviewComment, setReview
 const Product = () => {
     const navigate = useNavigate();
     const { productId } = useParams();
-    const { products, currency, addToCart, user, token } = useContext(ShopContext);
+    const { products, currency, addToCart, user, token, backendUrl } = useContext(ShopContext);
     const [productData, setProductData] = useState(null);
     
     // UI States
@@ -1534,7 +1534,7 @@ const Product = () => {
             const payload = { productId: productData._id, rating: Number(reviewRating), comment: reviewComment };
             const headers = { 'Content-Type': 'application/json' };
             if (token) headers.token = token;
-            const res = await axios.post(`${(import.meta.env.VITE_BACKEND_URL || '')}/api/product/review`, payload, { headers });
+            const res = await axios.post(`${backendUrl}/api/product/review`, payload, { headers });
             if (res.data.success) {
                 toast.success('Review submitted successfully.');
                 setProductData(prev => ({ ...prev, reviews: [...(prev.reviews||[]), res.data.review] }));

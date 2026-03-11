@@ -19,7 +19,10 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // Use Vite env if provided, otherwise default to localhost for local development
-export const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000'
+const envUrl = import.meta.env.VITE_BACKEND_URL;
+export const backendUrl = import.meta.env.MODE === 'production' 
+    ? (envUrl && envUrl !== 'http://localhost:4000' ? envUrl : 'https://frd-nutrition.onrender.com') 
+    : (envUrl || 'http://localhost:4000');
 export const currency = '₹'
 
 const App = () => {
