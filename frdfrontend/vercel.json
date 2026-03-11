@@ -2,20 +2,12 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/sitemap.xml",
-      "destination": "https://frd-nutrition.onrender.com/sitemap.xml"
-    },
-    {
       "source": "/assets/:path*",
       "destination": "/assets/:path*"
     },
     {
-      "source": "/uploads/:path*",
-      "destination": "https://frd-nutrition.onrender.com/uploads/:path*"
-    },
-    {
-      "source": "/:path((?!api|health-check).*)",
-      "destination": "https://frd-nutrition.onrender.com/:path"
+      "source": "/(?!assets/).*",
+      "destination": "https://frd-nutrition.onrender.com/:match*"
     }
   ]
 }
