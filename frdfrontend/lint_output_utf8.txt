@@ -1,172 +1,97 @@
-﻿
-E:\FRDgym-main\frdfrontend\src\App.jsx
-  3:8  error  'React' is defined but never used  no-unused-vars
+E:\FRDgym-main\frdfrontend\src\App.jsx:3:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\BestSeller.jsx:126:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\BestSeller.jsx:151:6: React Hook useEffect has a missing dependency: 'movingImages.length'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\components\BestSellers.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\BestSellers.jsx:7:8: 'BestSeller' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\CartTotal.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\DebugAuth.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\DynamicSEO.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Footer.jsx:121:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Footer.jsx:124:8: 'ShippingInfo' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Footer.jsx:125:8: 'ReturnsAndRefunds' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Hero.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Hero.jsx:31:6: React Hook useEffect has a missing dependency: 'slides'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\components\LatestCollection.jsx:181:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\MediaGallery.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Navbar.jsx:3:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\NewsletterBox.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\NewsletterBox.jsx:16:21: 'delay' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\OurPolicy.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:212:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:217:17: 'filled' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:217:33: 'size' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:229:24: 'rating' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:229:36: 'size' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:237:21: 'className' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:259:3: 'id' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:260:3: 'image' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:261:3: 'videos' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:262:3: 'name' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:263:3: 'price' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:264:3: 'originalPrice' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:265:3: 'discount' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:266:3: 'reviews' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:267:3: 'showStars' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx:268:3: 'showDiscountBadge' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\RelatedProducts.jsx:35:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\RelatedProducts.jsx:40:28: 'category' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\RelatedProducts.jsx:40:38: 'subCategory' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\SearchBar.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Title.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\components\Title.jsx:3:17: 'text1' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\components\Title.jsx:3:23: 'text2' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\context\ShopContext.jsx:6:14: Fast refresh only works when a file only exports components. Move your React context(s) to a separate file. [Warning/react-refresh/only-export-components]
+E:\FRDgym-main\frdfrontend\src\context\ShopContext.jsx:197:8: React Hook useEffect has a missing dependency: 'getProductsData'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\context\ShopContext.jsx:234:8: React Hook useEffect has missing dependencies: 'getUserCart' and 'token'. Either include them or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\context\ShopContext.jsx:248:20: 'children' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\main.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\About.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Auth0Callback.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Cart.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Collection.jsx:405:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Collection.jsx:517:6: React Hook useEffect has a missing dependency: 'applyFilters'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\pages\Contact.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Contact.jsx:3:8: 'Title' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\GymFacilities.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\GymFacilities.jsx:9:36: 'userRole' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\GymFacilities.jsx:59:6: React Hook useEffect has a missing dependency: 'fetchBookedSlots'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\pages\Home.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Login.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Login.jsx:254:9: 'handleSendLoginOtp' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:457:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:473:10: 'uploadFiles' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:473:23: 'setUploadFiles' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:474:10: 'uploadingOrderId' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:474:28: 'setUploadingOrderId' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:491:28: 'x' is not defined. [Error/no-undef]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:593:6: React Hook useEffect has a missing dependency: 'loadOrderData'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:826:54: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. [Error/react/no-unescaped-entities]
+E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx:826:58: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. [Error/react/no-unescaped-entities]
+E:\FRDgym-main\frdfrontend\src\pages\PlaceOrder.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\PlaceOrder.jsx:17:5: 'getCartAmount' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\PlaceOrder.jsx:175:9: 'placeCODOrder' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\PrivacyPolicy.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1312:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1322:21: 'className' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1322:44: 'rating' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1322:52: 'maxStars' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1340:22: 'className' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1354:26: 'reviewRating' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1354:40: 'setReviewRating' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1354:57: 'reviewComment' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1354:72: 'setReviewComment' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1354:90: 'submitReview' is missing in props validation [Error/react/prop-types]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1389:44: 'user' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1603:142: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. [Error/react/no-unescaped-entities]
+E:\FRDgym-main\frdfrontend\src\pages\Product.jsx:1603:159: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`. [Error/react/no-unescaped-entities]
+E:\FRDgym-main\frdfrontend\src\pages\Profile.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\ReturnsAndRefunds.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\ShippingInfo.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\TermsAndConditions.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\UserFacilities.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\UserFacilities.jsx:34:6: React Hook useEffect has a missing dependency: 'loadFacilitiesData'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
+E:\FRDgym-main\frdfrontend\src\pages\Verify.jsx:1:8: 'React' is defined but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Verify.jsx:12:26: 'setSearchParams' is assigned a value but never used. [Error/no-unused-vars]
+E:\FRDgym-main\frdfrontend\src\pages\Verify.jsx:41:8: React Hook useEffect has a missing dependency: 'verifyPayment'. Either include it or remove the dependency array. [Warning/react-hooks/exhaustive-deps]
 
-E:\FRDgym-main\frdfrontend\src\components\BestSeller.jsx
-  126:8  error    'React' is defined but never used                                                                                       no-unused-vars
-  151:6  warning  React Hook useEffect has a missing dependency: 'movingImages.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-E:\FRDgym-main\frdfrontend\src\components\BestSellers.jsx
-  1:8  error  'React' is defined but never used       no-unused-vars
-  7:8  error  'BestSeller' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\CartTotal.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\DebugAuth.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\DynamicSEO.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\Footer.jsx
-  121:8  error  'React' is defined but never used              no-unused-vars
-  124:8  error  'ShippingInfo' is defined but never used       no-unused-vars
-  125:8  error  'ReturnsAndRefunds' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\Hero.jsx
-   1:8  error    'React' is defined but never used                                                                          no-unused-vars
-  31:6  warning  React Hook useEffect has a missing dependency: 'slides'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-E:\FRDgym-main\frdfrontend\src\components\LatestCollection.jsx
-  181:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\MediaGallery.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\Navbar.jsx
-  3:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\NewsletterBox.jsx
-   1:8   error  'React' is defined but never used       no-unused-vars
-  16:21  error  'delay' is missing in props validation  react/prop-types
-
-E:\FRDgym-main\frdfrontend\src\components\OurPolicy.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\ProductItem.jsx
-  212:8   error  'React' is defined but never used                   no-unused-vars
-  217:17  error  'filled' is missing in props validation             react/prop-types
-  217:33  error  'size' is missing in props validation               react/prop-types
-  229:24  error  'rating' is missing in props validation             react/prop-types
-  229:36  error  'size' is missing in props validation               react/prop-types
-  237:21  error  'className' is missing in props validation          react/prop-types
-  259:3   error  'id' is missing in props validation                 react/prop-types
-  260:3   error  'image' is missing in props validation              react/prop-types
-  261:3   error  'videos' is missing in props validation             react/prop-types
-  262:3   error  'name' is missing in props validation               react/prop-types
-  263:3   error  'price' is missing in props validation              react/prop-types
-  264:3   error  'originalPrice' is missing in props validation      react/prop-types
-  265:3   error  'discount' is missing in props validation           react/prop-types
-  266:3   error  'reviews' is missing in props validation            react/prop-types
-  267:3   error  'showStars' is missing in props validation          react/prop-types
-  268:3   error  'showDiscountBadge' is missing in props validation  react/prop-types
-
-E:\FRDgym-main\frdfrontend\src\components\RelatedProducts.jsx
-  35:8   error  'React' is defined but never used             no-unused-vars
-  40:28  error  'category' is missing in props validation     react/prop-types
-  40:38  error  'subCategory' is missing in props validation  react/prop-types
-
-E:\FRDgym-main\frdfrontend\src\components\SearchBar.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\components\Title.jsx
-  1:8   error  'React' is defined but never used       no-unused-vars
-  3:17  error  'text1' is missing in props validation  react/prop-types
-  3:23  error  'text2' is missing in props validation  react/prop-types
-
-E:\FRDgym-main\frdfrontend\src\context\ShopContext.jsx
-    6:14  warning  Fast refresh only works when a file only exports components. Move your React context(s) to a separate file                    react-refresh/only-export-components
-  194:8   warning  React Hook useEffect has a missing dependency: 'getProductsData'. Either include it or remove the dependency array            react-hooks/exhaustive-deps
-  231:8   warning  React Hook useEffect has missing dependencies: 'getUserCart' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-  245:20  error    'children' is missing in props validation                                                                                     react/prop-types
-
-E:\FRDgym-main\frdfrontend\src\main.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\About.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Auth0Callback.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Cart.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Collection.jsx
-  405:8  error    'React' is defined but never used                                                                                no-unused-vars
-  517:6  warning  React Hook useEffect has a missing dependency: 'applyFilters'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-E:\FRDgym-main\frdfrontend\src\pages\Contact.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-  3:8  error  'Title' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\GymFacilities.jsx
-   1:8   error    'React' is defined but never used                                                                                    no-unused-vars
-   9:36  error    'userRole' is assigned a value but never used                                                                        no-unused-vars
-  59:6   warning  React Hook useEffect has a missing dependency: 'fetchBookedSlots'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-E:\FRDgym-main\frdfrontend\src\pages\Home.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Login.jsx
-    1:8  error  'React' is defined but never used                        no-unused-vars
-  254:9  error  'handleSendLoginOtp' is assigned a value but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Orders.jsx
-  457:8   error    'React' is defined but never used                                                                                 no-unused-vars
-  473:10  error    'uploadFiles' is assigned a value but never used                                                                  no-unused-vars
-  473:23  error    'setUploadFiles' is assigned a value but never used                                                               no-unused-vars
-  474:10  error    'uploadingOrderId' is assigned a value but never used                                                             no-unused-vars
-  474:28  error    'setUploadingOrderId' is assigned a value but never used                                                          no-unused-vars
-  491:28  error    'x' is not defined                                                                                                no-undef
-  593:6   warning  React Hook useEffect has a missing dependency: 'loadOrderData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-  826:54  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                   react/no-unescaped-entities
-  826:58  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                   react/no-unescaped-entities
-
-E:\FRDgym-main\frdfrontend\src\pages\PlaceOrder.jsx
-    1:8  error  'React' is defined but never used                   no-unused-vars
-   17:5  error  'getCartAmount' is assigned a value but never used  no-unused-vars
-  175:9  error  'placeCODOrder' is assigned a value but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\PrivacyPolicy.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\Product.jsx
-  1312:8    error  'React' is defined but never used                                no-unused-vars
-  1322:21   error  'className' is missing in props validation                       react/prop-types
-  1322:44   error  'rating' is missing in props validation                          react/prop-types
-  1322:52   error  'maxStars' is missing in props validation                        react/prop-types
-  1340:22   error  'className' is missing in props validation                       react/prop-types
-  1354:26   error  'reviewRating' is missing in props validation                    react/prop-types
-  1354:40   error  'setReviewRating' is missing in props validation                 react/prop-types
-  1354:57   error  'reviewComment' is missing in props validation                   react/prop-types
-  1354:72   error  'setReviewComment' is missing in props validation                react/prop-types
-  1354:90   error  'submitReview' is missing in props validation                    react/prop-types
-  1389:44   error  'user' is assigned a value but never used                        no-unused-vars
-  1603:142  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
-  1603:159  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
-
-E:\FRDgym-main\frdfrontend\src\pages\Profile.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\ReturnsAndRefunds.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\ShippingInfo.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\TermsAndConditions.jsx
-  1:8  error  'React' is defined but never used  no-unused-vars
-
-E:\FRDgym-main\frdfrontend\src\pages\UserFacilities.jsx
-   1:8  error    'React' is defined but never used                                                                                      no-unused-vars
-  34:6  warning  React Hook useEffect has a missing dependency: 'loadFacilitiesData'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-E:\FRDgym-main\frdfrontend\src\pages\Verify.jsx
-   1:8   error    'React' is defined but never used                                                                                 no-unused-vars
-  12:26  error    'setSearchParams' is assigned a value but never used                                                              no-unused-vars
-  41:8   warning  React Hook useEffect has a missing dependency: 'verifyPayment'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-Γ£û 95 problems (85 errors, 10 warnings)
-
+95 problems

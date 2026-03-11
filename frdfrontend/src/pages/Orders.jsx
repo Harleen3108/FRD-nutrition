@@ -488,7 +488,7 @@ const Orders = () => {
       }
       if (!token) {
         toast.error('Please login to view your orders');
-        navigate('/login');x
+        navigate('/login');
         return;
       }
 
