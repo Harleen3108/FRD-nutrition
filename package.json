@@ -1,0 +1,8 @@
+{
+  "name": "frd-nutrition-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p public && echo 'Build complete' > public/index.html"
+  }
+}
